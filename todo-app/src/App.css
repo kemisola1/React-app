@@ -1,0 +1,345 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
+
+.App {
+  align-items: center;
+  justify-content: center;
+}
+body {
+  background-color: #282c34;
+}
+.profile__title h1 {
+  color: #cbcbf3;
+  text-align: center;
+  margin: 30px 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  background: #cbcbf3;
+  padding: 10px 20px;
+  margin-top: 50px;
+  border-radius: 5px;
+  box-shadow: 1px 2px 10px #ddd;
+  
+}
+form h3 {
+  text-align: center;
+}
+form input {
+  width: 100%;
+  padding: 10px 5px;
+  outline: none;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  text-align: center;
+  color: rgb(207, 110, 207);
+  background-color: #cbcbf3;
+  border-radius: 10px;
+}
+.input__box {
+  margin-bottom: 20px;
+  
+}
+.btn__box {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.btn__box button {
+  background: #282c34;
+  color: #cbcbf3;
+  padding: 10px 20px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+
+}
+
+ .btn__box :hover {
+  color: rgb(207, 110, 207);
+  background-color: rgb(36, 31, 31);
+}
+
+
+.todo__box {
+  width: 80%;
+  margin: 0 auto;
+  
+}
+.todo__display {
+  
+  margin-top: 20px;
+  background: #cbcbf3;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 1px 2px 10px #ddd;
+  
+}
+.todo__display input {
+  cursor: pointer;
+  width: 50%;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  font-size: 28px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+/*.todo__display input[type=text], select, textarea {
+  width: 100%;
+}*/
+
+
+.alldone__button,
+.delete__button,
+.edit__button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 50%;
+}
+
+.alldone__button :hover  {
+  color: rgb(207, 110, 207);
+  
+}
+.delete__button :hover {
+  color: rgb(207, 110, 207);
+}
+.edit__button :hover {
+  color: rgb(207, 110, 207);
+}
+#i {
+  font-size: 35px;
+}
+.alldone__button {
+  color: #282c34;
+  margin-right: 10px;
+}
+.edit__button {
+  color: #282c34;
+  margin-right: 10px;
+}
+.delete__button {
+  color: #282c34;
+}
+@media screen and (max-width: 700px) {
+  .input__box {
+    width: 100%;
+  }
+
+  .todo__display {
+    margin-top: 20px;
+    background: #cbcbf3;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 1px 2px 10px #ddd;
+  }
+
+    .task {
+      margin-right: 0px;
+    }
+  }
+  input:focus,
+  button:focus {
+    outline: none;
+  }
+  
+
+@media screen and (max-width: 990px) {
+    .form {
+  width: 500px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  margin-top: 50px;
+  border-radius: 5px;
+  box-shadow: 1px 2px 10px #ddd;
+} 
+
+.todo__display input[type=text], select, textarea {
+  cursor: pointer;
+  max-width: 100%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500; }
+
+  
+}
+  
+    @media screen and (max-width: 889px) {
+
+      .todo__display {
+        margin-top: 20px;
+        background: #cbcbf3;
+        padding: 10px 20px;
+        border-radius: 5px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 1px 2px 10px #ddd;
+      }
+    
+
+  
+    }
+
+    @media screen and (max-width: 768px) {
+      .todo__display {
+        margin-top: 20px;
+        background: #cbcbf3;
+        padding: 10px 20px;
+        border-radius: 5px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 1px 2px 10px #ddd;
+      }
+      .todo__box {
+        width: 80%;
+
+    }
+}
+
+@media screen and (max-width: 600px) {
+  .todo__box {
+    width: 80%;
+    
+  }
+  .todo__display {
+    margin-top: 20px;
+    background: #cbcbf3;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 1px 2px 10px #ddd;
+  }  
+}
+
+
+@media screen and (max-width: 360px) {
+  .todo__box {
+    width: 50%;
+    padding-right: 5px;
+    padding-left: 5px;
+
+    
+  }
+
+  .input__box {
+    width: 90%;
+  }
+  .todo__display {
+    margin-top: 20px;
+    background: #cbcbf3;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 1px 2px 10px #ddd;
+  }
+
+  form input {
+    width: 100%;
+    padding: 10px 5px;
+    outline: none;
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    color: rgb(207, 110, 207);
+    background-color: #cbcbf3;
+    border-radius: 10px;
+  }
+  form {
+    width: 100%;
+    margin: 0 auto;
+    background: #cbcbf3;
+    padding: 10px 20px;
+    margin-top: 50px;
+    border-radius: 5px;
+    box-shadow: 1px 2px 10px #ddd;
+    
+  }
+
+}
+  
+
+@media screen and (max-width: 390px) {
+  .todo__box {
+    width: 90%;
+    padding-right: 40px;
+    
+  }
+
+  .input__box {
+    width: 95%;
+  }
+  .todo__display {
+    margin-top: 20px;
+    background: #cbcbf3;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 1px 2px 10px #ddd;
+    padding-right: 70px;
+  }
+
+
+form {
+  width: 60%;
+  margin: 0 auto;
+  background: #cbcbf3;
+  padding: 10px 10px;
+  margin-top: 50px;
+  border-radius: 10px;
+  box-shadow: 1px 2px 10px #ddd;
+  
+  
+}
+form input {
+  width: 100%;
+  padding: 10px 5px;
+  outline: none;
+  font-size: 11px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  text-align: center;
+  color: rgb(207, 110, 207);
+  background-color: #cbcbf3;
+  border-radius: 10px;
+}
+
+}
+
